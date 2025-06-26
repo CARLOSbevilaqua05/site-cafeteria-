@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Cadu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="MATERIAIS DE APOIO/logo.png" type="image/x-icon">
+    
+</head>
+<body>
+    <div class="caixa-video">
+        <video src="video/2909914-uhd_3840_2024_24fps.mp4" loop autoplay muted aria-hidden="true"></video>
+        <div class="mascara"></div>
+    </div>
+
+    <header>
+        <section>
+            <a href="#">
+                <img src="MATERIAIS DE APOIO/logo.png" alt="Logo da cafeteria">
+            </a>
+            <nav>
+                <a href="#">Home</a>
+                <a  id="menu" href="#">Menu</a>
+                <a onclick="mostrarEndereco()" href="#">Endereço</a>
+            </nav>
+        </section>
+    </header>
+   
+  
+    <main>
+        <section class="caixa-principal">
+            <div>
+                <h3>Code com o melhor café da região</h3>
+                <p>O melhor cafe da regiao</p>
+                <a class="botao-link" id="botao-saiba-mais" href="#">Pegue o seu agora</a>
+            </div>
+        </section>
+ <h2 id="h2">VENHA CONHECER NOSSO AMBIENTE</h2>
+  <h4 id="h4">Seg á Dom - 18:00 as 22:00</ </h4>
+        <div class="sobre-imagem">
+    
+    <img src="MATERIAIS DE APOIO/about-img.jpg" alt="Café sendo servido">
+  <img src="MATERIAIS DE APOIO/cafetria.jpg" alt="Ambiente da cafeteria">
+</div>
+
+        
+        </section>
+    </main>
+        
+    <h1 class="oi">CARDAPIO</h1>
+   <main id="fotos"class="fotos">
+  <div class="container">
+    <img src="MATERIAIS DE APOIO/img-1.jpg" alt="">
+    <div class="info">
+      <h3>Bolo de Chocolate</h3>
+      <p>R$ 35,00</p>
+      <button>Adicionar</button>
+    </div>
+  </div>
+  
+  <div class="container">
+    <img src="MATERIAIS DE APOIO/img-2.jpg" alt="">
+    <div class="info">
+      <h3>Mousse de Chocolate</h3>
+      <p>R$ 12,00</p>
+      <button>Adicionar</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <img src="MATERIAIS DE APOIO/img-3.jpg" alt="">
+    <div class="info">
+      <h3>Mousse de Chocolate</h3>
+      <p>R$ 12,00</p>
+      <button>Adicionar</button>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <img src="MATERIAIS DE APOIO/img-4.jpg" alt="">
+    <div class="info">
+      <h3>cafe preto</h3>
+      <p>R$ 12,00</p>
+      <button>Adicionar</button>
+    </div>
+  </div>
+
+
+
+  <div class="container">
+    <img src="MATERIAIS DE APOIO/img-5.jpg" alt="">
+    <div class="info">
+      <h3>cafe premium</h3>
+      <p>R$ 12,00</p>
+      <button>Adicionar</button>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <img src="MATERIAIS DE APOIO/img-6.jpg" alt="">
+    <div class="info">
+      <h3>cafe com leite</h3>
+      <p>R$ 12,00</p>
+      <button>Adicionar</button>
+    </div>
+  </div>
+
+
+
+
+  <div class="container">
+    <img src="MATERIAIS DE APOIO/img-7.jpg" alt="">
+    <div class="info">
+      <h3>Mousse italiano</h3>
+      <p>R$ 18,00</p>
+      <button>Adicionar</button>
+    </div>
+  </div>
+
+
+
+  <div class="container">
+    <img src="MATERIAIS DE APOIO/img-8.jpg" alt="">
+    <div class="info">
+      <h3>Mousse de Chocolate</h3>
+      <p>R$ 12,00</p>
+      <button>Adicionar</button>
+    </div>
+  </div>
+
+</main>
+
+   <!-- Carrinho flutuante -->
+<div id="carrinho" style="display: none; background: white; padding: 20px;  bottom: 70px; right: 20px; width: 400px; border-radius: 10px; box-shadow: 0 0 10px #000; margin:20px;">
+  <h2>Meu Carrinho</h2>
+  <div id="cart-items"></div>
+  <p>Total: R$ <span id="cart-total">0.00</span></p>
+  
+  <p>Endereço de entrega:</p>
+  <input type="text" id="address" placeholder="Digite seu endereço" style="width: 100%; margin-bottom: 10px;" />
+  
+  <p>Forma de pagamento:</p>
+  <select id="pagamento" style="width: 100%; margin-bottom: 10px;">
+    <option value="Pix">Pix</option>
+    <option value="Cartão">Cartão</option>
+    <option value="Dinheiro">Dinheiro</option>
+  </select>
+  
+  <button id="checkout-btn">Finalizar Pedido</button>
+  <button id="close-cart">Fechar</button>
+</div>
+
+<!-- Botão fixo no rodapé -->
+<footer id="lendaviva" style="position: relative; bottom: 10px; right: 10px; left:20px; text-align:center; ">
+  <button id="cart-btn" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 8px; cursor: pointer;">
+    (<span id="cart-count">0</span>) Carrinho
+  </button>
+</footer>
+
+<div class="containerr">
+    <section class="localizacao">
+      <h2>localização</h2>
+      <p id="ppp">28 Jackson Blvd Ste 1020 Chicago<br />IL 60604-2340</p>
+      
+      <div class="footer-note">© 2018 Política de privacidade</div>
+    </section>
+    <section class="form-contato">
+      <div id="div-form">
+          <div>
+              <h2>Formulário de Contato</h2>
+          </div>
+          <form>
+            <div id="ggg"><input type="text" placeholder="Enter your Name" name="name" required /></div>
+            <div  id="ggg"><input type="email" placeholder="Enter a valid email address" name="email" required /></div  id="ggg">
+            <div><textarea placeholder="Enter your message" name="message" required></textarea></div>
+            <div  id="ggg"><input  class="enviarr" type="submit" value="Enviar" /></div>
+          </form>
+      </div>
+    </section>
+  </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

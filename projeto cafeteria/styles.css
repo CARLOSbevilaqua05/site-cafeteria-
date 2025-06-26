@@ -1,0 +1,545 @@
+:root{
+    font-size: 10px;
+    --main-color:#d3ad7f;
+    --black:#131313;
+    --bg:#010103;
+    --border:0.e1rem solid rgba(255,255,255,0,3);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Orbitron", sans-serif;
+}
+
+h2{
+    font-size: 3.3rem;
+    text-align: center;
+    margin: 30px 30px 30px;
+    color: var(--main-color);
+    border-radius: 5px;
+}
+h4{
+    font-size: 3.3rem;
+    text-align: center;
+    margin: 30px 30px 30px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.caixa-video{
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+.caixa-video video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+.mascara{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: -o-linear-gradient(109deg rgba(10,12,16,0.99) 15%,rgba(10,12,16,0,99)85%);
+}
+
+section{
+    max-width: 1200px;
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    background: transparent;
+    
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color:var(--bg);
+    border-bottom: var(--border);
+    width: 100vw;
+     background: transparent;
+}
+
+header section{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+    padding: 1.5rem 0;
+    position: relative;
+ background: transparent;
+}
+
+header section img{
+    height: 6rem;
+}
+
+header section nav a {
+    margin: 0 1rem;
+    font-size: 1.8rem;
+    color: #fff;
+    width: 100vh;
+    transition: 0.5s linear;
+    background: transparent;
+}
+
+header section nav a:hover{
+    color: var(--main-color);
+    border-bottom: 0.1rem solid var(--main-color);
+    padding-bottom: 0.8rem ;
+    
+}
+
+.caixa-principal{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+
+}
+
+.caixa-principal div{
+    max-width: 600rem;
+     background-color: transparent;
+}
+
+.caixa-principal div h3{
+           color: #fff;
+           font-size: 6rem;
+           text-transform: uppercase;
+}
+
+.caixa-principal div p{
+    font-size: 2rem;
+    color: #fff;
+    font-weight: lighter;
+    padding: 1rem 0 ;
+    line-height: 1.8;
+}
+
+.botao-link{
+    background-color: var(--main-color);
+    display: inline-block;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 1.7rem;
+    color: #fff;
+    padding: 1rem 3rem;
+    border: none;
+    transition: 0.3s linear;
+
+}
+
+.sobre-imagem {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sobre-imagem img {
+  flex: 1 1 300px;
+  max-width: 48%;
+  border-radius: 10px;
+  box-shadow: var(--main-color) 2px 2px 2px;
+}
+
+
+
+
+.oi{
+    color: var(--main-color);
+    text-align: center;
+    font-size: 50px;
+    margin-top: 80px;
+    padding-top: 100px;
+    padding-bottom: 70px;
+    
+
+}
+.fotos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+     margin-top: 80px;
+    padding: 20px;
+}
+
+.container {
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.container img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    display: block;
+}
+
+.info {
+    padding: 10px;
+    text-align: center;
+}
+
+.info h3 {
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+
+.info p {
+    color: green;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.info button {
+    padding: 8px 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.info button:hover {
+    background-color: #388E3C;
+}
+
+body {
+    margin: 0;
+    background-color: #111;
+    font-family: Arial, sans-serif;
+}
+
+.oi{
+     margin-top: 40px;
+}
+
+
+.fotos {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.containerr {
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.containerr img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    display: block;
+}
+
+.info {
+    padding: 10px;
+    text-align: center;
+}
+
+.info h3 {
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+
+.info p {
+    color: green;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.info button {
+    padding: 8px 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.info button:hover {
+    background-color: #388E3C;
+}
+#cart-btn:hover{
+    color: var(--main-color);
+    background-color: rgb(225, 220, 245);
+}
+
+
+  .btn-voltar-containerr {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    button {
+      padding: 12px 24px;
+      font-size: 16px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    
+    .btn-voltar-containerr {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    button {
+      padding: 12px 24px;
+      font-size: 16px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .mapa-container {
+      width: 100%;
+      height: 300px;
+      overflow: hidden;
+      border-top: 2px solid #ccc;
+    }
+
+    #lendaviva{
+        margin: 25px 25px 25px 25px;
+    }
+
+    #container{
+        transform: scaleX(1.05);
+    animation: aparecer 1.6s forwards;
+}
+
+
+
+
+
+
+/* Animação de entrada */
+@keyframes aparecer {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Efeito ao passar o mouse */
+.container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 992px) {
+  /* Grid reduz para 2 colunas em tablets e telas médias */
+  .fotos {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 15px;
+  }
+
+  /* Ajusta o tamanho das imagens para caber melhor */
+  .container img {
+    height: 180px;
+  }
+  
+  /* Ajusta título e textos */
+  h2, h3, h4 {
+    font-size: 2.5rem;
+  }
+
+  .caixa-principal div h3 {
+    font-size: 4.5rem;
+  }
+
+  .caixa-principal div p {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 600px) {
+  /* Grid de 1 coluna em celulares */
+  .fotos {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 10px;
+    height: auto; /* para evitar scroll desnecessário */
+  }
+
+  /* Ajuste imagens para altura automática para não cortar */
+  .container img {
+    height: auto;
+    max-height: 250px;
+  }
+
+  /* Tamanhos de fonte menores para celular */
+  h2, h3, h4 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 20px 10px;
+  }
+
+  .caixa-principal div h3 {
+    font-size: 3.5rem;
+  }
+
+  .caixa-principal div p {
+    font-size: 1.4rem;
+    padding: 0 10px;
+  }
+
+  /* Ajusta botões para largura total */
+  .botao-link, .info button, button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.6rem;
+  }
+
+  /* Ajusta o header para ocupar menos espaço */
+  header section {
+    gap: 15px;
+    padding: 1rem;
+  }
+
+  header section img {
+    height: 4rem;
+  }
+
+  header section nav a {
+    font-size: 1.4rem;
+    margin: 0 0.5rem;
+  }
+
+  /* Reduz altura e padding da caixa principal para celular */
+  .caixa-principal {
+    min-height: auto;
+    padding: 2rem 1rem;
+  }
+
+  /* Ajusta margens de títulos como .oi */
+  .oi {
+    font-size: 3rem;
+    margin-top: 30px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+
+  
+rm-contato input[type="submit"] {
+      width: 100px;
+      padding: 8px;
+      font-family: Georgia, serif;
+      font-weight: 600;
+      font-size: 1rem;
+      color: #333;
+      background: white;
+      border: 1px solid #444;
+      border-radius: 3px;
+      cursor: pointer;
+      align-self: flex-start;
+      transition: background-color 0.25s ease, color 0.25s ease;
+    }
+    .form-contato input[type="submit"]:hover {
+      background-color: #444;
+      color: white;
+      border-color: #444;
+    }
+}
+
+
+
+#ppp{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+
+}
+
+#div-form{
+    font-size: 2rem;
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+#ggg{
+    padding: 5px;
+
+}
+
+.enviarr{
+    text-align: center;
+    border-radius: 10px;
+    background-color: var(--main-color);
+    width: 120px;
+    height: 35px;
+}
+.enviarr:hover{
+    color: #da0101;
+    cursor: pointer;
+    background: transparent;
+}
